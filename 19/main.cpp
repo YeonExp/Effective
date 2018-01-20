@@ -24,19 +24,10 @@ void Point::setY(int newVal)
 	y = newVal;
 }
 
-Point::Point()
-{
-	setX(0);
-	setY(0);
-}
-
-Point::Point(int x, int y)
-{
-	setX(x);
-	setY(y);
-}
-
+Point::Point() : x(0), y(0) { }
+Point::Point(int x, int y) : x(x), y(y) { }
 Point::~Point() { }
+
 struct RectData
 {
 	Point ulhc;
