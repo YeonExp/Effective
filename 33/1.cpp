@@ -17,7 +17,7 @@ private:
 	const NoCopiable& operator=(const NoCopiable& rhs)
 	{
 		std::cout << "NoCopiable operator()" << std::endl;
-		return rhs;
+		return *this;
 	}
 };
 
